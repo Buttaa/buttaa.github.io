@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+    background: black; /* Full background set to black */
+	font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0 0 0; /* Small top margin for the header */
+    width: 100%;
+
+}
+
+center {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header-title {
+    animation: loadAnimation 1.5s;
+}
+
+@keyframes loadAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 120px); /* Adjusting for header and footer height */
+	text-align: left;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body, html {
+        background: black; /* Ensure background is black on mobile */
+    }
+}
